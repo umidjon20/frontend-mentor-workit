@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope&display=swap');
 
-*{
+html{
     padding: 0;
     margin: 0;
+    height: 100%;
     box-sizing: border-box;
+   scroll-behavior: smooth;
+   
 }
 :root{
     /* colors */
@@ -12,13 +15,126 @@
     --davys-grey:#584d62;
     --ghost-white:#fcf8ff;
     /* fonts */
-    --heading-font-family:'Frauncez','Times New Roman', serif;
-    --body--font-family:'Manrope','Arial',sans-serif;
+    --heading-font-family:"Fraunces",'Times New Roman', serif;
+    --body--font-family:"Manrope",'Arial',sans-serif;
+
+    --transition-duration: 0.3s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    line-height: 32px;
+    background-color: #fff;
+    color: var(--dark-purple);
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.container{
+    width: 100%;
+    max-width: 1146px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 24px 14px;
+    border: 2px solid transparent;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--eucaplyptus);
+    text-align: center;
+    letter-spacing: -0.18px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;text-decoration: none;
+    color: var(--dark-purple);
+}
+.button:hover{
+    border-color: var(--eucaplyptus);
+    background-color: transparent;
+    color: var(--eucaplyptus);
+}
+.site-header-hero-wrapper {
+    padding-top: 56px;
+    background-color: var(--dark-purple);
+
+}
+.logo {
+    display: block;
+    text-decoration: none;
+}
+.logo:hover{
+    opacity: 0.8;
+}
+.logo:active{
+    opacity: 0.6;
+}
+.logo-img{
+    display: block;
+    width: 97px;
+    height: 26px;
+}
+
+.underline-link {
+    display: inline-block;
+    border-bottom: 3px solid var(--eucaplyptus);
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+    letter-spacing: -0.18px;
+}
+.underline-link:hover{
+    color: var(--eucaplyptus);
+}
+.underline-link:active{
+    opacity: 0.6;
+}
+.site-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-heading{
+    max-width: 635px;
+    margin-bottom: 36px;
+    font-family:var(--heading-font-family);
+    font-size: 80px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+}
+.underline-text {
+    border-bottom: 3px solid var(--eucaplyptus);
+}
+.hero-button{
+    margin-bottom: 50px;
 }
