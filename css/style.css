@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* colors */
+    --dark-purple:#24053E;
+    --eucaplyptus:#44ffa1;
+    --davys-grey:#584d62;
+    --ghost-white:#fcf8ff;
+    /* fonts */
+    --heading-font-family:'Frauncez','Times New Roman', serif;
+    --body--font-family:'Manrope','Arial',sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
