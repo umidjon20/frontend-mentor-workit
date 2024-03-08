@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto:wght@700&display=swap');
 html{
     padding: 0;
     margin: 0;
     height: 100%;
     box-sizing: border-box;
    scroll-behavior: smooth;
+   font-family:"Roboto",'Arial',sans-serif;
    
 }
 :root{
@@ -16,8 +16,7 @@ html{
     --ghost-white:#fcf8ff;
     /* fonts */
     --heading-font-family:"Fraunces",'Times New Roman', serif;
-    --body--font-family:"Manrope",'Arial',sans-serif;
-
+   
     --transition-duration: 0.3s;
 }
 
@@ -31,7 +30,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: var(--body-font-family);
     font-size: 18px;
     line-height: 32px;
     background-color: #fff;
@@ -45,8 +43,8 @@ img {
   
 .container{
     width: 100%;
-    max-width: 1146px;
-    padding: 0 16px;
+    max-width: 1194px;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
@@ -54,6 +52,9 @@ img {
     flex-grow: 1;
 }
 
+.hero-img{
+    display: block;
+}
 .button {
     display: inline-block;
     padding: 11px 24px 14px;
@@ -128,7 +129,8 @@ img {
     margin-bottom: 36px;
     font-family:var(--heading-font-family);
     font-size: 80px;
-    line-height: 1;
+    font-weight: 600;
+    line-height: 1.2;
     color: #fff;
     text-align: center;
 }
@@ -137,4 +139,38 @@ img {
 }
 .hero-button{
     margin-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .site-header-hero-wrapper{
+        padding-top: 36px;
+    }
+    
+    .site-header-container{
+        margin-bottom: 60px;
+    }
+    .hero-heading{
+        max-width: 465px;
+        font-size: 60px;
+        line-height: 1;
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+    .container{
+        padding: 0 16px;
+    }
+    .site-header-container{
+        margin-bottom: 64px;
+    }
+    .hero-heading{
+        max-width: 80%;
+        font-size: 50px;
+    }
+    .hero-button{
+        margin-bottom: 60px;
+    }
 }
